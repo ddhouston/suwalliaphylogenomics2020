@@ -1,0 +1,92 @@
+
+================== ASTRAL ===================== 
+
+This is ASTRAL version 5.7.3
+Gene trees are treated as unrooted
+296 trees read from ../suwal_bs10.tre
+All output trees will be *arbitrarily* rooted at SpallidulaA
+
+======== Running the main analysis
+Number of taxa: 64 (44 species)
+Taxa: {SpallidulaE=[Su21], SpallidulaC=[Su18], SpallidulaD=[Su20], Sdecolorata=[Su49], Tsignata=[Su63], Sbimaculata=[Su42], SspdB=[Su57], SspdA=[Su56, Su55], Steleckojensis=[Su47, Su46, Su45], SpallidulaA=[Su16], Sdubia=[Su25, Su24, Su23, Su22], SpallidulaB=[Su17], Sjezoensis=[Su04, Su03], Sspe=[Su05, Su06], NforcipataB=[Su65], NforcipataA=[Su37, Su31], Pdiversa=[Su64], Sspb=[Su02, Su01], Afraterna=[Su60], Sthoracica=[Su33], SmarginataB=[Su15, Su14], Ssierra=[Su38, Su39], SmarginataA=[Su13], Ssalish=[Su35, Su34], Ssachalina=[Su48], Ssublimis=[Su41], SnipponicaB=[Su59], Soregonensis=[Su62, Su61], Swardi=[Su44], Sautumna=[Su40], SkerzhneriB=[Su58], SnipponicaA=[Su53, Su36], SkerzhneriA=[Su32], SamoenacolensA=[Su09], SamoenacolensB=[Su10], SstarkiA=[Su26, Su66], SamoenacolensC=[Su12, Su11], SstarkiB=[Su27, Su29, Su28, Su30], SspaC=[Su52], SspaB=[Su51], SspaA=[Su50], SlineosaB=[Su08], SlineosaA=[Su07], Stalalajensis=[Su43]}
+Taxon occupancy: {Su16=168, Su15=269, Su59=138, Su14=279, Su58=194, Su13=165, Su57=191, Su12=226, Su56=240, Su11=248, Su55=240, Su10=168, Su53=179, Su18=138, Su17=225, Su63=181, Su62=176, Su61=163, Su60=176, Su49=159, Su05=234, Su04=172, Su48=101, Su47=196, Su03=200, Su46=246, Su02=250, Su01=243, Su45=191, Su44=217, Su43=178, Su42=135, Su09=50, Su08=175, Su07=104, Su06=251, Su52=68, Su51=140, Su50=85, Su38=160, Su37=204, Su36=204, Su35=166, Su34=168, Su33=94, Su32=126, Su31=136, Su39=192, Su41=108, Su40=180, Su27=155, Su26=251, Su25=184, Su24=206, Su23=244, Su66=264, Su22=242, Su65=115, Su21=85, Su20=201, Su64=184, Su29=253, Su28=199, Su30=253}
+Number of gene trees: 296
+296 trees have missing taxa
+Calculating quartet distance matrix (for completion of X)
+Species tree distances calculated ...
+Will attempt to complete bipartitions from X before adding using a distance matrix.
+Building set of clusters (X) from gene trees 
+In second round sampling 2 rounds will be done
+------------------------------
+gradient0: 10303
+------------------------------
+gradient1: 1656
+Number of Clusters after addition by distance: 11959
+calculating extra bipartitions to be added at level 1 ...
+Adding to X using resolutions of greedy consensus ...
+Limit for sigma of degrees:1150
+polytomy size limit : 30
+discarded polytomies:  [3, 4, 4, 7, 11, 23, 30]
+Threshold 0.0:
+Threshold 0.01:
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 11961
+Threshold 0.02:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 11961
+Threshold 0.05:
+polytomy of size 7; rounds with additions with at least 5 support: 3; clusters: 11985
+Threshold 0.1:
+polytomy of size 11; rounds with additions with at least 5 support: 2; clusters: 12009
+Threshold 0.2:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 12009
+polytomy of size 23; rounds with additions with at least 5 support: 0; clusters: 12029
+Threshold 0.3333333333333333:
+polytomy of size 30; rounds with additions with at least 5 support: 0; clusters: 12031
+max k is :6
+Number of Clusters after addition by greedy: 12031
+gradient0 in heuristiic: 12031
+calculating extra bipartitions to be added at level 1 ...
+Adding to X using resolutions of greedy consensus ...
+Limit for sigma of degrees:1150
+polytomy size limit : 30
+discarded polytomies:  [3, 4, 4, 7, 11, 21, 30]
+Threshold 0.0:
+Threshold 0.01:
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 12031
+Threshold 0.02:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 12031
+Threshold 0.05:
+polytomy of size 7; rounds with additions with at least 5 support: 0; clusters: 12037
+Threshold 0.1:
+polytomy of size 11; rounds with additions with at least 5 support: 1; clusters: 12059
+Threshold 0.2:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 12059
+polytomy of size 21; rounds with additions with at least 5 support: 0; clusters: 12069
+Threshold 0.3333333333333333:
+polytomy of size 30; rounds with additions with at least 5 support: 0; clusters: 12073
+max k is :2
+Number of Clusters after addition by greedy: 12073
+gradient1 in heuristiic: 42
+partitions formed in 9.654 secs
+Dynamic Programming starting after 9.654 secs
+Using tree-based weight calculation.
+Using polytree-based weight calculation.
+Polytree max score: 26848656
+Polytree building time: 0.042 seconds.
+Counting unresolvable quartets ... 38500
+Number of quartet trees in the gene trees: 26810156
+Size of largest cluster: 64
+Greedy score: 14095913
+estimationFactor: 1.904712096336009
+Sub-optimal score: 14416732
+Total Number of elements weighted: 37713
+Normalized score (portion of input quartet trees satisfied before correcting for multiple individuals): 0.5890182436834758
+Optimization score: 15791671
+Optimal tree inferred in 23.061 secs.
+(SnipponicaB,((SnipponicaA,Sspe),(Sbimaculata,(((SpallidulaE,(SkerzhneriB,(Sjezoensis,Steleckojensis))),(SmarginataA,(NforcipataA,(SpallidulaC,(Sdubia,(SlineosaA,(SlineosaB,(SpallidulaA,Sspb)))))))),(((Afraterna,(SamoenacolensB,Soregonensis)),(SspaB,(Sdecolorata,(SspaA,(SspaC,(SkerzhneriA,((Pdiversa,SpallidulaD),(NforcipataB,(Tsignata,Ssachalina))))))))),(Ssierra,((SmarginataB,SstarkiB),((Sautumna,(Swardi,Stalalajensis)),(Ssublimis,(SamoenacolensA,(Sthoracica,(SamoenacolensC,(SspdB,(Ssalish,(SspdA,(SpallidulaB,SstarkiA))))))))))))))));
+Final quartet score is: won't report because of the existense of polytomies and to save time. To get the score run with -t 1 and you can score the tree below using -q. 
+Final normalized quartet score is: won't report because of the existense of polytomies and to save time. To get the score run with -t 1 and you can score the tree below using -q. 
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 19:
+	{SspdB, SamoenacolensC, SspdA, SpallidulaB, Ssalish, Sthoracica, SstarkiA}
+(Su16,((Su02,Su01)'[pp1=1;pp2=0;pp3=0]':0.3240406918230648,(Su08,(Su07,((Su25,Su24,Su23,Su22)'[pp1=1;pp2=0;pp3=0]':0.3248370957986659,(Su18,((Su37,Su31)'[pp1=1;pp2=0;pp3=0]':0.8183115978047738,(Su13,((Su21,(Su58,((Su04,Su03)'[pp1=0.91;pp2=0.05;pp3=0.05]':0.1257411615695743,(Su47,Su46,Su45)'[pp1=0.96;pp2=0.02;pp3=0.02]':0.13523491866507623)'[pp1=1;pp2=0;pp3=0]':0.555591375827619)'[pp1=0.55;pp2=0.42;pp3=0.03]':0.14399115865661316)'[pp1=1;pp2=0;pp3=0]':0.31223586016476457,((((Su60,(Su10,(Su62,Su61)'[pp1=1;pp2=0;pp3=0]':1.0142704390777617)'[pp1=0.98;pp2=0;pp3=0.02]':0.26327726530401646)'[pp1=1;pp2=0;pp3=0]':0.3458792074973832,(Su51,(Su49,(Su50,(Su52,(Su32,((Su64,Su20)'[pp1=0.98;pp2=0.01;pp3=0.02]':0.18264074352857995,(Su65,(Su63,Su48)'[pp1=0.88;pp2=0.05;pp3=0.07]':0.23393273250641802)'[pp1=1;pp2=0;pp3=0]':0.40162969937160825)'[pp1=0.42;pp2=0.57;pp3=0.01]':0.12802641613322666)'[pp1=0.45;pp2=0.38;pp3=0.17]':0.04030178633804438)'[pp1=0.78;pp2=0.07;pp3=0.15]':0.17193690981553622)'[pp1=0.78;pp2=0.14;pp3=0.08]':0.14118382538111549)'[pp1=0.91;pp2=0.08;pp3=0.02]':0.1733170898731971)'[pp1=0.91;pp2=0.07;pp3=0.01]':0.1513711072666353)'[pp1=1;pp2=0;pp3=0]':0.20684358669889283,((Su38,Su39)'[pp1=1;pp2=0;pp3=0]':1.012630842826487,(((Su15,Su14)'[pp1=1;pp2=0;pp3=0]':1.1291027070106348,(Su27,Su29,Su28,Su30)'[pp1=1;pp2=0;pp3=0]':0.4415790128382988)'[pp1=1;pp2=0;pp3=0]':0.7054363031709312,((Su40,(Su44,Su43)'[pp1=0.99;pp2=0;pp3=0.01]':0.31221227911485955)'[pp1=1;pp2=0;pp3=0]':0.34271132742553706,(Su41,(Su09,(Su33,((Su12,Su11)'[pp1=1;pp2=0;pp3=0]':0.612679426102083,(Su57,((Su35,Su34)'[pp1=0.24;pp2=0.38;pp3=0.38]':0.0,((Su56,Su55)'[pp1=0.63;pp2=0.19;pp3=0.19]':0.04505790009096442,(Su17,(Su26,Su66)'[pp1=0.99;pp2=0.01;pp3=0.01]':0.15745581354715849)'[pp1=0.99;pp2=0.01;pp3=0]':0.16048830453581706)'[pp1=0.98;pp2=0.01;pp3=0.01]':0.13571859211204518)'[pp1=0.68;pp2=0.18;pp3=0.13]':0.06223361349504385)'[pp1=1;pp2=0;pp3=0]':0.3054616557238222)'[pp1=0.99;pp2=0.01;pp3=0]':0.2610492379143775)'[pp1=0.89;pp2=0.09;pp3=0.02]':0.3707163900421929)'[pp1=0.88;pp2=0.06;pp3=0.05]':0.2589729666976599)'[pp1=0.99;pp2=0;pp3=0.01]':0.22090022627553543)'[pp1=0.33;pp2=0.42;pp3=0.25]':1.1001763885269096E-4)'[pp1=1;pp2=0;pp3=0]':0.2235824834126959)'[pp1=0.81;pp2=0.07;pp3=0.12]':0.07045126185682044)'[pp1=0.3;pp2=0.42;pp3=0.28]':0.0,(Su42,(((Su53,Su36)'[pp1=0.99;pp2=0.01;pp3=0.01]':0.1844876923904533,(Su05,Su06)'[pp1=1;pp2=0;pp3=0]':0.9288927941291193)'[pp1=1;pp2=0;pp3=0]':0.4596274551440793,Su59)'[pp1=1;pp2=0;pp3=0]':0.4722128006106771)'[pp1=1;pp2=0;pp3=0]':0.44193512287604836)'[pp1=1;pp2=0;pp3=0]':0.19956821665962066)'[pp1=0.94;pp2=0.06;pp3=0]':0.16949486917741594)'[pp1=1;pp2=0;pp3=0]':0.3471827881497223)'[pp1=0.72;pp2=0.27;pp3=0.01]':0.14354308492755521)'[pp1=1;pp2=0;pp3=0]':0.4123395677975853)'[pp1=1;pp2=0;pp3=0]':0.2894851370412662)'[pp1=0.99;pp2=0.01;pp3=0.01]':0.2560278887012912)'[pp1=0.62;pp2=0.06;pp3=0.32]':0.08622268426412716));
+Weight calculation took 12.797684636 secs
+ASTRAL finished in 23.394 secs

@@ -1,0 +1,69 @@
+
+================== ASTRAL ===================== 
+
+This is ASTRAL version 5.7.3
+Gene trees are treated as unrooted
+296 trees read from ../suwal_bs10.tre
+All output trees will be *arbitrarily* rooted at Su01
+
+======== Running the main analysis
+Number of taxa: 64 (64 species)
+Taxa: [Su01, Su04, Su46, Su32, Su47, Su18, Su20, Su64, Su63, Su52, Su53, Su60, Su49, Su05, Su06, Su11, Su12, Su26, Su66, Su41, Su34, Su35, Su17, Su14, Su15, Su28, Su30, Su29, Su22, Su43, Su44, Su62, Su13, Su25, Su03, Su36, Su59, Su39, Su07, Su08, Su10, Su48, Su65, Su24, Su31, Su37, Su40, Su56, Su33, Su55, Su23, Su57, Su27, Su50, Su42, Su58, Su45, Su61, Su16, Su02, Su38, Su51, Su21, Su09]
+Taxon occupancy: {Su16=168, Su15=269, Su59=138, Su14=279, Su58=194, Su13=165, Su57=191, Su12=226, Su56=240, Su11=248, Su55=240, Su10=168, Su53=179, Su18=138, Su17=225, Su63=181, Su62=176, Su61=163, Su60=176, Su49=159, Su05=234, Su04=172, Su48=101, Su47=196, Su03=200, Su46=246, Su02=250, Su01=243, Su45=191, Su44=217, Su43=178, Su42=135, Su09=50, Su08=175, Su07=104, Su06=251, Su52=68, Su51=140, Su50=85, Su38=160, Su37=204, Su36=204, Su35=166, Su34=168, Su33=94, Su32=126, Su31=136, Su39=192, Su41=108, Su40=180, Su27=155, Su26=251, Su25=184, Su24=206, Su23=244, Su66=264, Su22=242, Su65=115, Su21=85, Su20=201, Su64=184, Su29=253, Su28=199, Su30=253}
+Number of gene trees: 296
+296 trees have missing taxa
+Calculating quartet distance matrix (for completion of X)
+Species tree distances calculated ...
+Will attempt to complete bipartitions from X before adding using a distance matrix.
+Building set of clusters (X) from gene trees 
+------------------------------
+gradient0: 15049
+Number of Clusters after addition by distance: 15049
+calculating extra bipartitions to be added at level 1 ...
+Adding to X using resolutions of greedy consensus ...
+Limit for sigma of degrees:1650
+polytomy size limit : 37
+discarded polytomies:  [3, 3, 3, 4, 4, 5, 7, 11, 26, 37]
+Threshold 0.0:
+Threshold 0.01:
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 15051
+Threshold 0.02:
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 15051
+polytomy of size 5; rounds with additions with at least 5 support: 0; clusters: 15073
+Threshold 0.05:
+polytomy of size 7; rounds with additions with at least 5 support: 1; clusters: 15087
+Threshold 0.1:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 15087
+polytomy of size 3; rounds with additions with at least 5 support: 0; clusters: 15087
+polytomy of size 11; rounds with additions with at least 5 support: 0; clusters: 15105
+Threshold 0.2:
+polytomy of size 4; rounds with additions with at least 5 support: 0; clusters: 15105
+polytomy of size 26; rounds with additions with at least 5 support: 0; clusters: 15125
+Threshold 0.3333333333333333:
+polytomy of size 37; rounds with additions with at least 5 support: 0; clusters: 15129
+max k is :2
+Number of Clusters after addition by greedy: 15129
+gradient0 in heuristiic: 15129
+partitions formed in 4.364 secs
+Dynamic Programming starting after 4.364 secs
+Using tree-based weight calculation.
+Using polytree-based weight calculation.
+Polytree max score: 26848656
+Polytree building time: 0.051 seconds.
+Number of quartet trees in the gene trees: 26848656
+Size of largest cluster: 64
+Greedy score: 15208794
+estimationFactor: 1.7653376066504682
+Sub-optimal score: 15709159
+Total Number of elements weighted: 41608
+Normalized score (portion of input quartet trees satisfied before correcting for multiple individuals): 0.6347268928470758
+Optimization score: 17041564
+Optimal tree inferred in 19.634 secs.
+(Su42,((Su59,((Su05,Su06),(Su53,Su36))),((((Su14,Su15),(Su27,(Su28,(Su30,Su29)))),((Su40,(Su43,Su44)),(Su41,(Su09,(Su33,((Su11,Su12),(Su35,(Su57,(Su34,((Su56,Su55),(Su17,(Su26,Su66)))))))))))),(((Su51,(Su39,Su38)),((Su60,(Su10,(Su62,Su61))),(Su49,(Su50,(Su52,(Su32,((Su20,Su64),(Su65,(Su63,Su48))))))))),((Su21,(Su58,(Su04,(Su45,(Su03,(Su46,Su47)))))),(Su13,((Su31,Su37),(Su18,(((Su25,Su24),(Su22,Su23)),(Su07,(Su08,(Su16,(Su01,Su02)))))))))))));
+Final quartet score is: 17041564
+Final normalized quartet score is: 0.6347268928470758
+You may want to ignore posterior probabilities and other statistics related to the following branch branch because the effective number of genes impacting it is only 19:
+	{Su11, Su12, Su26, Su66, Su34, Su35, Su17, Su56, Su33, Su55, Su57}
+(Su01,(Su02,(Su16,(Su08,(Su07,(((Su25,Su24)'[pp1=0.77;pp2=0.09;pp3=0.14]':0.08327576758287097,(Su22,Su23)'[pp1=0.86;pp2=0.05;pp3=0.09]':0.09397807432230917)'[pp1=1;pp2=0;pp3=0]':0.2643694003908714,(Su18,((Su31,Su37)'[pp1=1;pp2=0;pp3=0]':0.8183115978047738,(Su13,((Su21,(Su58,(Su04,(Su45,(Su03,(Su46,Su47)'[pp1=0.64;pp2=0.24;pp3=0.12]':0.06383965614859319)'[pp1=0.95;pp2=0.04;pp3=0.01]':0.1589554628504936)'[pp1=0.89;pp2=0.09;pp3=0.02]':0.14204924705440639)'[pp1=1;pp2=0;pp3=0]':0.526198096031359)'[pp1=0.55;pp2=0.42;pp3=0.03]':0.14399115865661316)'[pp1=1;pp2=0;pp3=0]':0.31223586016476457,(((Su51,(Su39,Su38)'[pp1=0.99;pp2=0;pp3=0]':0.3636422145706222)'[pp1=1;pp2=0;pp3=0]':0.6896628710813328,((Su60,(Su10,(Su62,Su61)'[pp1=1;pp2=0;pp3=0]':1.0142704390777617)'[pp1=0.98;pp2=0;pp3=0.02]':0.26327726530401646)'[pp1=1;pp2=0;pp3=0]':0.3430857974637266,(Su49,(Su50,(Su52,(Su32,((Su20,Su64)'[pp1=0.98;pp2=0.02;pp3=0.01]':0.18264074352857995,(Su65,(Su63,Su48)'[pp1=0.88;pp2=0.05;pp3=0.07]':0.23393273250641802)'[pp1=1;pp2=0;pp3=0]':0.40162969937160825)'[pp1=0.42;pp2=0.57;pp3=0.01]':0.12802641613322666)'[pp1=0.45;pp2=0.38;pp3=0.17]':0.04030178633804438)'[pp1=0.78;pp2=0.07;pp3=0.15]':0.17193690981553622)'[pp1=0.78;pp2=0.14;pp3=0.08]':0.14118382538111549)'[pp1=1;pp2=0;pp3=0]':0.356446316694716)'[pp1=1;pp2=0;pp3=0]':0.19616680287121308)'[pp1=0.32;pp2=0.07;pp3=0.61]':0.024938902217571696,((((Su14,Su15)'[pp1=1;pp2=0;pp3=0]':1.1291027070106348,(Su27,(Su28,(Su30,Su29)'[pp1=0.99;pp2=0;pp3=0.01]':0.1685210117159847)'[pp1=0.95;pp2=0.04;pp3=0.01]':0.18328667643043597)'[pp1=1;pp2=0;pp3=0]':0.26229608954156886)'[pp1=1;pp2=0;pp3=0]':0.7054363031709312,((Su40,(Su43,Su44)'[pp1=0.99;pp2=0.01;pp3=0]':0.31221227911485955)'[pp1=1;pp2=0;pp3=0]':0.34271132742553706,(Su41,(Su09,(Su33,((Su11,Su12)'[pp1=1;pp2=0;pp3=0]':0.612679426102083,(Su35,(Su57,(Su34,((Su56,Su55)'[pp1=0.62;pp2=0.15;pp3=0.23]':0.04505790009096442,(Su17,(Su26,Su66)'[pp1=0.99;pp2=0.01;pp3=0.01]':0.15745581354715849)'[pp1=0.99;pp2=0.01;pp3=0]':0.16048830453581706)'[pp1=0.67;pp2=0.13;pp3=0.2]':0.05961846006541637)'[pp1=0.7;pp2=0.1;pp3=0.2]':0.07851124818523778)'[pp1=0.53;pp2=0.34;pp3=0.12]':0.051471717892632864)'[pp1=1;pp2=0;pp3=0]':0.3964320773102857)'[pp1=0.99;pp2=0.01;pp3=0]':0.2610492379143775)'[pp1=0.89;pp2=0.09;pp3=0.02]':0.3707163900421929)'[pp1=0.88;pp2=0.06;pp3=0.05]':0.2589729666976599)'[pp1=0.99;pp2=0;pp3=0.01]':0.22090022627553543)'[pp1=0.33;pp2=0.42;pp3=0.25]':1.1001763885269096E-4)'[pp1=1;pp2=0;pp3=0]':0.2842702185747077,((Su59,((Su05,Su06)'[pp1=1;pp2=0;pp3=0]':0.9288927941291193,(Su53,Su36)'[pp1=0.99;pp2=0.01;pp3=0.01]':0.18448769239045354)'[pp1=1;pp2=0;pp3=0]':0.4596274551440793)'[pp1=1;pp2=0;pp3=0]':0.4722128006106771,Su42)'[pp1=1;pp2=0;pp3=0]':0.4510269435059173)'[pp1=0.32;pp2=0.28;pp3=0.39]':0.0)'[pp1=1;pp2=0;pp3=0]':0.18270633236532918)'[pp1=0.94;pp2=0.06;pp3=0]':0.16949486917741594)'[pp1=1;pp2=0;pp3=0]':0.3471827881497223)'[pp1=0.72;pp2=0.27;pp3=0.01]':0.14354308492755521)'[pp1=1;pp2=0;pp3=0]':0.4123395677975853)'[pp1=1;pp2=0;pp3=0]':0.2894851370412662)'[pp1=0.99;pp2=0.01;pp3=0.01]':0.2560278887012912)'[pp1=0.62;pp2=0.32;pp3=0.06]':0.08622268426412716)'[pp1=1;pp2=0;pp3=0]':0.3240406918230645));
+Weight calculation took 14.348933436 secs
+ASTRAL finished in 19.955 secs
