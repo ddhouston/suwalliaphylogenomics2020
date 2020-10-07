@@ -1,0 +1,5 @@
+Species	Proportion Monophyletic	Total Gene Trees
+Samoenacolens	0.00	21
+Sdubia	0.20	102
+Spallidula	0.00	66
+Sstarki	0.00	259

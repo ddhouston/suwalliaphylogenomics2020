@@ -1,0 +1,19 @@
+Species	Proportion Monophyletic	Total Gene Trees
+Nforcipata	0.19	155
+Samoenacolens	0.14	246
+Sdubia	0.23	269
+Sjezoensis	0.16	123
+Skerzhneri	0.00	88
+Slineosa	0.06	70
+Smarginata	0.34	277
+Snipponica	0.30	187
+Soregonensis	0.65	115
+Spallidula	0.00	259
+Ssalish	0.10	105
+Ssierra	0.38	108
+Sspa	0.03	80
+Sspb	0.28	214
+Sspd	0.04	250
+Sspe	0.67	212
+Sstarki	0.00	294
+Steleckojensis	0.22	232

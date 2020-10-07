@@ -1,0 +1,3 @@
+Species	Proportion Monophyletic	Total Gene Trees
+Spallidula	0.00	9
+Sstarki	0.01	181
