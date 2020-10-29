@@ -1,18 +1,18 @@
 # Our models are directly based on example code provided with the package.
+library(BioGeoBEARS)
 
-astral <- read.tree("suwalia-50p-astral-modifiedBL.tre")
-
+read.tree("suwallia.pruned.chronogram.biogeobears.newick") # Make sure it reads in okay
 ###########################
 # BioGeoBEARS setup
 
-suwalliatree <- np("suwallia_bs10-ASTRAL-ST-locPP.BGBrerooted.newick")
+suwalliatree <- np("suwallia.pruned.chronogram.biogeobears.newick")
 
 # Look at the raw Newick file:
 moref(suwalliatree)
 
 pdffn = "tree.pdf"
 pdf(file=pdffn, width=9, height=12)
-tr = read.tree("suwallia_bs10-ASTRAL-ST-locPP.BGBrerooted.newick")
+tr = read.tree("suwallia.pruned.chronogram.biogeobears.newick")
 tr
 plot(tr)
 title("Suwallia Tree")
@@ -30,7 +30,7 @@ BioGeoBEARS_run_object = define_BioGeoBEARS_run()
 BioGeoBEARS_run_object$trfn = suwalliatree
 
 # Give BioGeoBEARS the location of the geography text file
-geogfn = np("suwalliaastralpruned.geography_names.txt")
+geogfn = np("suwallia.geography.speciestree.txt")
 # Look at your geographic range data:
 tipranges = getranges_from_LagrangePHYLIP(lgdata_fn=geogfn)
 tipranges
@@ -89,8 +89,8 @@ BioGeoBEARS_run_object$BioGeoBEARS_model_object@params_table
 check_BioGeoBEARS_run(BioGeoBEARS_run_object)
 
 resfn = "Suwallia_DEC.Rdata"
-tic()
-runslow = FALSE
+
+runslow = TRUE
 if (runslow)
     {
     #sourceall("/Dropbox/_njm/__packages/BioGeoBEARS_setup/")
@@ -102,11 +102,12 @@ if (runslow)
 
     resDEC = res
     } else {
+    save(res, file=resfn)
     # Loads to "res"
     load(resfn)
     resDEC = res
     }
-toc()
+
 
 plot_BioGeoBEARS_model(resDEC, 'results')
 plot_BioGeoBEARS_results(resDEC)
@@ -596,19 +597,22 @@ results_object =resDIVALIKEj
 scriptdir = np(system.file("extdata/a_scripts", package="BioGeoBEARS"))
 
 # States
-res2 = plot_BioGeoBEARS_results(results_object, analysis_titletxt, addl_params=list("j"), plotwhat="text", label.offset=0.45, tipcex=0.7, statecex=0.7, splitcex=0.6, titlecex=0.8, plotsplits=TRUE, cornercoords_loc=scriptdir, include_null_range=TRUE, tr=tr, tipranges=tipranges)
-
+res2 = plot_BioGeoBEARS_results(results_object, analysis_titletxt, addl_params=list("j"), 
+                                plotwhat="text", label.offset=0.45, tipcex=0.7, statecex=0.7, 
+                                splitcex=0.6, titlecex=0.8, plotsplits=TRUE, cornercoords_loc=scriptdir, 
+                                include_null_range=TRUE, tr=tr, tipranges=tipranges)
+res2
 # Pie chart
 analysis_titletxt ="Suwallia_DIVALIKE+J"
 results_object = resDIVALIKEj
-tiff(filename = "DIVALIKEJ.tiff", width = 12, height = 9, units = "in", res = 900, compression = "lzw")
+tiff(filename = "DIVALIKEJ.tiff", width = 12, height = 11, units = "in", res = 900, compression = "lzw")
 plot_BioGeoBEARS_results(results_object, analysis_titletxt, addl_params=list("j"), plotwhat="pie", 
-                         label.offset=0.6, tipcex=1, statecex=0.3, splitcex=0.3,
+                         label.offset=0.01, tipcex=1, statecex=0.3, splitcex=0.3,
                          titlecex=1.2, plotsplits=TRUE, cornercoords_loc=scriptdir, 
                          include_null_range=TRUE, tr=tr, tipranges=tipranges)
 dev.off()
 
-
+plot_BioGeoBEARS_results()
 #########################################################
 # Set up empty tables to hold the statistical results
 restable = NULL
@@ -702,7 +706,7 @@ teststable$alt = c("DEC+J", "DIVALIKE+J", "BAYAREALIKE+J")
 teststable$null = c("DEC", "DIVALIKE", "BAYAREALIKE")
 row.names(restable) = c("DEC", "DEC+J", "DIVALIKE", "DIVALIKE+J", "BAYAREALIKE", "BAYAREALIKE+J")
 restable = put_jcol_after_ecol(restable)
-restable
+
 
 # Look at the results!!
 restable
@@ -752,3 +756,4 @@ write.table(restable_AICc_rellike, file="restable_AICc_rellike.txt", quote=FALSE
 # Save with nice conditional formatting
 write.table(conditional_format_table(restable_AIC_rellike), file="restable_AIC_rellike_formatted.txt", quote=FALSE, sep="\t")
 write.table(conditional_format_table(restable_AICc_rellike), file="restable_AICc_rellike_formatted.txt", quote=FALSE, sep="\t")
+
